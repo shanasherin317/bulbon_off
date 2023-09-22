@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="frame">
+     <div class="div1">
+        <button id="btn1">Turn On Light</button>
+        <img id="img" src="https://www.liquidleds.com.au/cdn/shop/products/8WGLSDimmableLEDBulb_E27_ClearinNaturalWhite_85a656a8-e4c7-48de-af75-154373a89a9c.jpg?v=1662184156" alt="">
+        <button id="btn2">Turn Off Light</button>
+    </div>
+     </div>
+
+    <script>
+   let button1= document.getElementById("btn1")
+   let button2= document.getElementById("btn2")
+   let image=document.getElementById("img")
+
+    console.log(button1);
+    console.log(button2);
+    console.log(image);
+
+    button1.addEventListener("click",function(){
+        image.src="https://images.lights.com/latest/38768/main/main_image-1037318646-m.jpg"
+    })
+
+
+
+    button2.addEventListener("click",function(){
+        image.src="https://www.liquidleds.com.au/cdn/shop/products/8WGLSDimmableLEDBulb_E27_ClearinNaturalWhite_85a656a8-e4c7-48de-af75-154373a89a9c.jpg?v=1662184156"
+    })
+
+    </script>
+</body>
+</html>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .frame{
+        width: 100%;
+        height: 100vh;
+        background-color:white;
+       padding-left: 300px;
+       padding-top: 100px;
+    }
+    .div1{
+    
+    }
+    button{
+        padding: 10px 25px;
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+        font-weight: 500;
+    }
+    img{
+    width:350px;
+    height: 350px;
+    }
+</style>
